@@ -1,0 +1,12 @@
+.uvod {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-around; */
+  width: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+.foto img {
+  width: 100%;
+}
