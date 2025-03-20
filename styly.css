@@ -1,12 +1,99 @@
-.uvod {
-  /* display: flex;
+body {
+  background: linear-gradient(#615dad, #ffc8da);
+  background-repeat: no-repeat;
+  display: flex;
   flex-direction: column;
-  justify-content: space-around; */
-  width: 50%;
-  margin-left: 25%;
-  margin-right: 25%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  height: 100%;
+  width: 100%;
 }
 
-.foto img {
+div.uvod {
+  /* margin: 12.5% 25% 20% 25%; */
+  padding: 12.5% 25% 20% 25%;
+  width: calc (100% / 2);
+}
+
+img {
+  display: block;
   width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+div .foto {
+  width: 100%;
+}
+
+h1 {
+  font-family: "Lobster", serif;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+p {
+  padding: 2%;
+}
+
+.uvod {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+div.text {
+  color: #ffffff;
+  text-align: center;
+  background-color: #283e50;
+  padding: 4% 0%;
+  width: 100%;
+  text-decoration: none;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.button {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+div.button {
+  width: 100%;
+}
+
+.button1 {
+  background-color: #1fcca4;
+  padding: 4% 0%;
+  border-bottom: black solid 1px;
+
+}
+
+.button1:link {
+  background-color: #1fcca4;
+  text-decoration: none;
+
+}
+
+.button1:hover {
+  background-color: #1cbb96;
+  text-decoration: none;
+}
+
+.button2 {
+  background-color: #0197f6;
+  padding: 4% 0%;
+}
+
+.button2:hover {
+  background-color: #0090e9;
 }
