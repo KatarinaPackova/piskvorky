@@ -1,16 +1,23 @@
+*,
+:after,
+:before {
+  box-sizing: border-box;
+}
+
 body {
   background: linear-gradient(#615dad, #ffc8da);
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
   height: 100%;
   width: 100%;
+  margin: 0;
 }
 
 div.uvod {
-  /* margin: 12.5% 25% 20% 25%; */
-  padding: 12.5% 25% 20% 25%;
+  margin: 12.5% 25% 20% 25%;
   width: calc (100% / 2);
 }
 
@@ -26,6 +33,7 @@ div .foto {
 
 h1 {
   font-family: "Lobster", serif;
+  font-size: 34px;
 }
 
 a {
@@ -75,13 +83,11 @@ div.button {
   background-color: #1fcca4;
   padding: 4% 0%;
   border-bottom: black solid 1px;
-
 }
 
 .button1:link {
   background-color: #1fcca4;
   text-decoration: none;
-
 }
 
 .button1:hover {
