@@ -17,7 +17,7 @@ body {
 }
 
 div.uvod {
-  margin: 12.5% 25% 20% 25%;
+  margin: 12.5% 20% 20% 20%;
   width: calc (100% / 2);
 }
 
@@ -42,7 +42,7 @@ a {
 }
 
 p {
-  padding: 2%;
+  padding: 0% 4%;
 }
 
 .uvod {
@@ -57,7 +57,7 @@ div.text {
   color: #ffffff;
   text-align: center;
   background-color: #283e50;
-  padding: 4% 0%;
+  padding: 4% 0% 2% 0%;
   width: 100%;
   text-decoration: none;
 }
