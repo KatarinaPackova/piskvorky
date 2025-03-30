@@ -30,6 +30,7 @@ img {
 
 h1 {
   font-family: "Lobster", serif;
+  margin-bottom: 0;
 }
 
 a {
@@ -69,11 +70,12 @@ p {
   display: flex;
   flex-direction: column;
   color: white;
-}
-
-div.button {
   width: 100%;
 }
+
+/* div.button {
+  width: 100%;
+} */
 
 .button1 {
   background-color: #1fcca4;
