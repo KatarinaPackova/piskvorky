@@ -51,7 +51,8 @@ p {
   justify-content: center;
   flex-wrap: wrap;
   align-items: center;
-  margin: 12.5% 20% 20% 20%;
+  margin: 10% 0% 20% 0%;
+  /* margin: 12.5% 20% 20% 20%; */
   max-width: 80vmin;
 }
 
@@ -142,12 +143,13 @@ h2 {
   flex-grow: 1;
   flex-shrink: 1;
   width: 100%;
+  padding-bottom: 2%;
 }
 
 .player {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
   width: 50%;
 }
 
@@ -157,7 +159,7 @@ h2 {
   align-items: center;
   width: 50%;
   height: auto;
-  gap: 10px;
+  gap: 8px;
 }
 
 .return {
