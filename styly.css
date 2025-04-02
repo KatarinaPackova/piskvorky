@@ -1,13 +1,16 @@
-* {
+*,
+:before,
+:after {
   box-sizing: border-box;
 }
+
 
 body {
   background: linear-gradient(#615dad, #ffc8da) fixed;
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 1.2em;
@@ -16,13 +19,11 @@ body {
   margin: 0;
 }
 
-
-img {
+.foto1 {
   display: block;
   width: 100%;
   border-radius: 10px 10px 0 0;
 }
-
 
 .foto {
   width: 100%;
@@ -31,6 +32,9 @@ img {
 h1 {
   font-family: "Lobster", serif;
   margin-bottom: 0;
+  color: #ffffff;
+  letter-spacing: 1px;
+  font-size: 3em;
 }
 
 a {
@@ -52,7 +56,6 @@ p {
   max-width: 80vmin;
 }
 
-
 .text {
   display: flex;
   flex-direction: column;
@@ -65,7 +68,7 @@ p {
   text-decoration: none;
 }
 
-.button {
+.button-main {
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -89,6 +92,11 @@ p {
   text-decoration: none;
 }
 
+.button1:focus {
+  background-color: #1cbb96;
+  text-decoration: none;
+}
+
 .button2 {
   background-color: #0197f6;
   padding: 4% 0%;
@@ -96,4 +104,115 @@ p {
 
 .button2:hover {
   background-color: #0090e9;
+}
+
+.button2:focus {
+  background-color: #0090e9;
+}
+
+/* Stylovani hra.html */
+
+.title {
+  min-width: 100%;
+  text-align: center;
+  font-size: 3em;
+}
+
+h2 {
+  color: #ffffff;
+  font-size: 2em;
+}
+
+.hra {
+  display: flex;
+  flex-direction: column;
+  max-width: 80vmin;
+  min-width: 80vmin;
+  margin-bottom: 20%;
+}
+
+.hraci-pole {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: linear-gradient(#c4b6d7, #f1d4e3);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.menu-left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  width: 50%;
+}
+
+.menu-right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 50%;
+  height: auto;
+  gap: 15px;
+}
+
+.return {
+  background-color: #1fcca4;
+  border-radius: 4px;
+  padding: 5%;
+  display: block;
+}
+
+.return:link {
+  background-color: #1fcca4;
+}
+
+.return:hover {
+  background-color: #1cbb96;
+}
+
+.return:focus {
+  background-color: #1cbb96;
+}
+
+.refresh {
+  background-color: #0197f6;
+  border-radius: 4px;
+  padding: 5%;
+  display: block;
+}
+
+.refresh:link {
+  background-color: #0197f6;
+}
+
+.refresh:hover {
+  background-color: #0090e9;
+}
+
+.return:focus {
+  background-color: #0090e9;
+}
+
+button {
+  width: calc(80vmin / 10);
+  height: calc(80vmin / 10);
+  padding: 0;
+  background: transparent;
+  box-sizing: border-box;
+  border: 1px solid black;
+}
+
+button:hover {
+  background-color: #f7e5ee;
+}
+
+button:focus {
+  background-color: #f7e5ee;
 }
