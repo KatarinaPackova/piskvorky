@@ -138,13 +138,16 @@ h2 {
 .header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  flex-grow: 1;
+  flex-shrink: 1;
   width: 100%;
 }
 
 .player {
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 10px;
   width: 50%;
 }
 
@@ -154,7 +157,7 @@ h2 {
   align-items: center;
   width: 50%;
   height: auto;
-  gap: 15px;
+  gap: 10px;
 }
 
 .return {
