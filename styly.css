@@ -112,9 +112,10 @@ p {
 
 /* Stylovani hra.html */
 
+
 h2 {
   color: #ffffff;
-  font-size: 1.5em;
+  font-size: 1.3em;
 }
 
 .game {
@@ -123,7 +124,6 @@ h2 {
   justify-content: center;
   align-items: center;
   max-width: 80vmin;
-  min-width: 80vmin;
   margin-bottom: 20%;
 }
 
@@ -132,8 +132,11 @@ h2 {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  background: linear-gradient(#b0a4c2, #e0c9de);
+  /*  width: 100%; */
+  max-width: 80vmin;
+  height: 80vmin;
+  aspect-ratio: 1;
+  background: linear-gradient(#b0a4c2, #d9c4dc);
 }
 
 .header {
@@ -163,11 +166,12 @@ h2 {
 }
 
 .return {
+  display: block;
   background-color: #1fcca4;
   border-radius: 4px;
   padding: 5%;
-  display: block;
 }
+
 
 .return:link {
   background-color: #1fcca4;
@@ -201,8 +205,11 @@ h2 {
 }
 
 button {
-  width: calc(80vmin / 10);
-  height: calc(80vmin / 10);
+  /*  width: calc(80vmin / 10);
+  height: calc(80vmin / 10); */
+  width: calc(100% / 10);
+  height: calc(100% / 10);
+  aspect-ratio: 1;
   padding: 0;
   background: transparent;
   box-sizing: border-box;
