@@ -10,21 +10,31 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styly.css" />
+    <script type="module" src="hra.js" defer></script>
     <title>Hra</title>
   </head>
   <body>
     <div class="game">
-      <h1 class="title">Piškvorky</h1>
+      <div class="title">
+        <h1>Piškvorky</h1>
+      </div>
       <div class="header">
-        <div class="player">
+        <div class="menu-left">
           <h2>HRAJE:</h2>
-          <img class="foto2" src="./img/hra2/circle.svg" alt="circle player" />
+          <div>
+            <img
+              id="player"
+              class="foto2"
+              src="./img/hra2/circle.svg"
+              alt="circle player"
+            />
+          </div>
         </div>
         <nav class="menu-right">
           <a class="return" href="index.html"
             ><img class="foto3" src="./img/hra2/home.svg" alt="home"
           /></a>
-          <a class="refresh" href="hra.html"
+          <a id="confirm" class="refresh" href="hra.html"
             ><img
               class="foto4"
               src="./img/hra2/restart.svg"

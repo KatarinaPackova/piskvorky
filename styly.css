@@ -33,7 +33,7 @@ h1 {
   font-family: "Lobster", serif;
   margin-bottom: 0;
   color: #ffffff;
-  font-size: 2em;
+  font-size: 2.3em;
 }
 
 a {
@@ -112,10 +112,15 @@ p {
 
 /* Stylovani hra.html */
 
+.title {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
 
 h2 {
   color: #ffffff;
-  font-size: 1.3em;
+  font-size: 1.4em;
 }
 
 .game {
@@ -136,7 +141,9 @@ h2 {
   max-width: 80vmin;
   height: 80vmin;
   aspect-ratio: 1;
-  background: linear-gradient(#b0a4c2, #d9c4dc);
+  /* background: linear-gradient(#b0a4c2, #d9c4dc); */
+  background: linear-gradient(to top right, #615dad, #ffc8da);
+
 }
 
 .header {
@@ -149,7 +156,7 @@ h2 {
   padding-bottom: 2%;
 }
 
-.player {
+.menu-left {
   display: flex;
   align-items: center;
   gap: 8px;
@@ -166,7 +173,8 @@ h2 {
 }
 
 .return {
-  display: block;
+  display: flex;
+  align-items: center;
   background-color: #1fcca4;
   border-radius: 4px;
   padding: 5%;
@@ -189,7 +197,8 @@ h2 {
   background-color: #0197f6;
   border-radius: 4px;
   padding: 5%;
-  display: block;
+  display: flex;
+  align-items: center;
 }
 
 .refresh:link {
@@ -222,4 +231,20 @@ button:hover {
 
 button:focus {
   background-color: #f7e5ee;
+}
+
+/* Ukol c.3 */
+
+.board__field--circle {
+  background-image: url(img/hra3/circle.svg);
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.board__field--cross {
+  background-image: url(img/hra3/cross.svg);
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center;
 }
