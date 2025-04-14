@@ -225,13 +225,11 @@ button {
   border: 1px solid black;
 }
 
-button:hover {
-  background-color: #f7e5ee;
+button:hover,
+button:focus {
+  background-color: #f7e5ee70;
 }
 
-button:focus {
-  background-color: #f7e5ee;
-}
 
 /* Ukol c.3 */
 
@@ -240,6 +238,10 @@ button:focus {
   background-size: 80%;
   background-repeat: no-repeat;
   background-position: center;
+  transform: scale(0);
+  opacity: 0;
+  transform-origin: center;
+  animation: showImage 0.15s ease-out forwards;
 }
 
 .board__field--cross {
@@ -247,4 +249,27 @@ button:focus {
   background-size: 80%;
   background-repeat: no-repeat;
   background-position: center;
+  transform: scale(0);
+  opacity: 0;
+  transform-origin: center;
+  animation: showImage 0.15s ease-out forwards;
+}
+
+
+
+@keyframes showImage {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+    border: 0;
+  }
+
+  99.99% {
+    border: 0;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
