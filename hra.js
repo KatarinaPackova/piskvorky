@@ -47,7 +47,7 @@ buttons.forEach((button) => {
       setTimeout(() => {
         alert(`Vyhral hrac se symbolem ${winner}!`);
       }, 1000);
-      location.reload();} */
+      location.reload();} ....... */
 
     console.log('values', herniPole);
     console.log('winner', winner);
