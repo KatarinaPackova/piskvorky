@@ -1,8 +1,10 @@
+import { findWinner } from 'https://unpkg.com/piskvorky@0.1.4';
+
 let currentPlayer = 'circle';
-const button = document.querySelectorAll('button');
+const buttons = document.querySelectorAll('button');
 const player = document.getElementById('player');
 
-button.forEach((button) => {
+buttons.forEach((button) => {
   button.addEventListener('click', (event) => {
     if (currentPlayer === 'circle') {
       event.target.classList.add('board__field--circle');
@@ -14,6 +16,41 @@ button.forEach((button) => {
       player.src = 'img/hra2/circle.svg';
     }
     event.target.disabled = true;
+
+    const herniPole = Array.from(buttons).map((button) => {
+      if (button.classList.contains('board__field--circle')) return 'o';
+      if (button.classList.contains('board__field--cross')) return 'x';
+      else return '_';
+    });
+
+    const winner = findWinner(herniPole);
+    if (winner === 'x') {
+      setTimeout(() => {
+        alert('Vyhral krizek!');
+        location.reload();
+      }, 210);
+    }
+    if (winner === 'o') {
+      setTimeout(() => {
+        alert('Vyhralo kolecko!');
+        location.reload();
+      }, 210);
+    }
+    if (winner === 'tie') {
+      setTimeout(() => {
+        alert('Hra skoncila nerozhodne!');
+        location.reload();
+      }, 210);
+    }
+
+    /*   if (winner === 'x' || winner === 'o') {
+      setTimeout(() => {
+        alert(`Vyhral hrac se symbolem ${winner}!`);
+      }, 1000);
+      location.reload();} */
+
+    console.log('values', herniPole);
+    console.log('winner', winner);
   });
 });
 
